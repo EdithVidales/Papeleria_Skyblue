@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href=".\Css\contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <link href="https://fonts.googleapis.com/css2?  family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="encabezado">    
+
+        <div class="logo">
+            <div class="carrito_Item">
+
+            </div>
+            <div class="carrito_Item">
+                <a href="index.php">
+                    <img class="log" src=".\Imagenes\logo-Papeleria4.jpg" style="width: 100px;
+                    height: 80px;
+                    object-fit: contain;
+                    object-position: center center;" alt="logo"> 
+                </a>
+            </div>
+            
+
+            <div class="carrito_Item" style="height: 60px; width: 50px;">
+                <img src=".\Imagenes\carrito-de-compras.png" width="45" height="51.83" alt="compra">
+            </div>
+        </div>
+
+        <div class="division"><hr> </div>
+
+        <div class="nave_1" id="myTopnav">
+            <a href="index.php">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="#Politicas">Políticas de la tienda</a>
+            <a href="#Tienda">Tienda</a> 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nave_1"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "nave_1"
+                }
+            }
+        </script>
+    </header>
+
+
+    <h2 class="sobrenombre">Escríbenos</h2>
+
+
+    <form class="form" action="https://formspree.io/f/xvoyaarw" method="POST">
+    
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre"  required class="form_input">
+        </div>
+        <div>
+            <label for="email">Correo</label>
+            <input type="email" name="email"  placeholder="usuario@dominio.xy" required class="form_input">
+        </div>
+        <div class="textarea">
+            <label for="asunto">Asunto</label>
+            <textarea class="form_input"  placeholder="Escriba aqui su mensaje" maxlength="200" name="mensaje"></textarea >
+        </div>
+        <div>
+            <label for="telefono">Telefono</label>     
+            <input type="telefono" placeholder="(81) 26458701" class="form_input" name="telefono">           
+        </div>
+        <input type="submit" value="Solicitar" >
+
+    </form>
+
+
+    <footer>
+        <div class="correo">
+            <h4>info@mysite.com</h4>
+        </div>
+        <div class="derechos">
+            <h4> &copy2022 por Papeleria Skyblue</h4>
+        </div>
+    </footer>
+
+
+
+    
+        
+
+
+</body>
+</html>

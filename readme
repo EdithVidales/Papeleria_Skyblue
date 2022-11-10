@@ -1,0 +1,13 @@
+
+
+    Evidencia 1 | Programacion
+        - Tienda Online de Productos
+
+    Equipo: X, X...
+
+    Pagina desarrollada con PHP & MYSQL (Wampserver).
+    
+    Instrucciones:
+        - En caso de levantar el servidor con wampserver, guardar la carpeta de este proyecto en la direccion "C:\wamp64\www".
+        - En caso de utilizar XAMPP: "C:\xampp\htdocs".
+        - En caso de utilizar otro servidor, leer su respectiva documentacion.

@@ -1,0 +1,284 @@
+body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background-color: #fdfcfc;
+}
+
+/* .logo hace que la imagen del logo de la empresa y que la imagen del carrito de compras se
+posicionen de manera correcta en el centro y a la izquierda del menú */
+
+.logo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+
+    padding: 29px;
+    margin-top: -31px;
+    margin-bottom: -27px;
+}
+
+/* ajusta el tamaño para la apariencia del carrito*/
+.carrito_Item {
+    border: solid 2px transparent;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* regula el tamaño del hr y su color*/
+hr {
+    height: 1px;
+    width: 88%;
+    background-color: black;
+
+}
+
+/* Alinea el menú para que esté centrada*/
+.nave_1 {
+    text-align: center;
+    padding: 12px;
+}
+
+nav {
+    height: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    font-size: 16px;
+}
+
+.nave_1 {
+    overflow: hidden;
+}
+
+.nave_1 a {
+    display: inline-block;
+    padding: 14px 16px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*Evita que el icono de menú se visualice*/
+.nave_1 .icon {
+    display: none;
+}
+
+/*Ayuda a que cuando llega a un determinado ancho de página, desaparezca todo lo del menú menos "Inicio" y aparezca
+las barras del menú*/
+@media screen and (max-width: 600px) {
+    .nave_1 a:not(:first-child) {
+        display: none;
+    }
+
+    .nave_1 a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/*Esto hace lo contrario, evita que desaparezca todo el menú y solo se visualice las barras del menú desplegable*/
+@media screen and (max-width: 600px) {
+    .nave_1.responsive {
+        position: relative;
+    }
+
+    .nave_1.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nave_1.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/*Permite que la imagen de bienvendia se centre de manera correcta */
+.bienvenida {
+    display: flex;
+    justify-content: center;
+}
+
+/*Alinea el texto de bienvenida en el centro a su vez cambia el tamaño de este*/
+.bienvenidatext {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Slider o carrusel del cartas para el Best Sellers */
+
+.cartas-carrusel {
+    background-color: rgb(135,130,246);
+    padding: 20px;
+    height: 33.5rem;
+}
+
+.cartas-carrusel2 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 30.5rem;
+}
+
+.titulo-best-seller {
+    height: auto;
+}
+
+.titulo-best-seller {
+    width: 850px;
+    height: 67px;
+}
+
+.todos-productos {
+    margin: 50px 0px 50px;
+}
+
+.titulo-best-seller {
+    position: relative;
+    margin: 50px 0px 50px calc((100% - 980px) * 0.5);
+    left: 65px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+.titulo-best-seller {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: start;
+    pointer-events: none;
+    min-height: var(--min-height);
+    min-width: var(--min-width);
+}
+
+.font_0 {
+    margin: 0;
+}
+
+.font_0 {
+    font: var(--font_0);
+    color: rgb(var(--color_15));
+    letter-spacing: 0em;
+}
+
+.slider {
+    background-color: #fdfcfc;
+    height: 19rem;
+}
+
+#autoWidth {
+    display: -webkit-inline-box;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box{
+    margin: auto;
+    width: 220px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide-img {
+    height: auto;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.detalles-box {
+    width: 100%;
+    display: block;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 7px;
+}
+
+.tipo {
+    font: normal normal normal 16px/20px avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    color: #000000;
+}
+
+.precio {
+    --gallery_priceColor: #757575;
+    --gallery_priceFontStyle: normal normal normal 13px/1.75em questrial,sans-serif;
+    font: normal normal normal 16px/20px avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    color: #757575;
+}
+
+/*Estilos de los descuentos de los productos*/
+
+.container-table {
+    
+    background-color: rgb(80 102 255 / 78%);
+    padding: 25px;
+    height: 32rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50px;
+}
+
+.table_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: auto;
+}
+
+.tamaño {
+    font-size: 49px;
+}
+
+.table_header, .table_item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.table_header {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.table_item{
+    padding: 10px;
+    font-size: 1.2em;
+
+}
+
+.porcentaje_item {
+    justify-content: center;
+}

@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+
+
+}
+
+/* .logo hace que la imagen del logo de la empresa y que la imagen del carrito de compras se
+posicionen de manera correcta en el centro y a la izquierda del menú */
+
+.logo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    
+    padding: 29px;
+    margin-top: -31px;
+    margin-bottom: -27px;
+}
+
+/* ajusta el tamaño para la apariencia del carrito*/
+.carrito_Item{
+    border: solid 2px transparent;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* regula el tamaño del hr y su color*/
+hr {
+    height: 1px;
+    width: 88%;
+    background-color: black;
+
+}
+
+/* Alinea el menú para que esté centrada*/
+.nave_1 {
+    text-align: center;
+    padding: 12px;
+}
+
+nav {
+    height: 10px;
+    text-align: center;
+}
+
+nav ul{
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+     }
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    font-size: 16px;
+}
+
+.nave_1 {
+    overflow: hidden;
+}
+
+.nave_1 a {
+    display: inline-block;
+    padding: 14px 16px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*Evita que el icono de menú se visualice*/
+.nave_1 .icon {
+    display: none;
+}
+
+/*Ayuda a que cuando llega a un determinado ancho de página, desaparezca todo lo del menú menos "Inicio" y aparezca
+las barras del menú*/
+@media screen and (max-width: 600px) {
+    .nave_1 a:not(:first-child) {display: none;}
+    .nave_1 a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/*Esto hace lo contrario, evita que desaparezca todo el menú y solo se visualice las barras del menú desplegable*/
+@media  screen and (max-width: 600px) {
+    .nave_1.responsive {position: relative;}
+    .nave_1.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nave_1.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Sobrenombre (ESCRIBENOS)*/
+
+.sobrenombre{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+/* FORMULARIO */
+
+
+form {
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 1em;
+    border: 2px solid rgb(79, 88, 136);
+    border-radius: 1em;
+
+  }
+
+
+
+
+
+
+
+
+label {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 0;
+    width: 20%;
+    text-align: center;
+    
+}
+
+.form_input{
+    margin-top: 1em;
+    height: 2em;
+    border: none;
+    border-bottom: #000000 2px solid;
+    width: 80%;
+}
+
+.textarea{
+    margin: 1em auto;
+
+   
+}
+
+
+.textarea textarea{
+    resize: none;
+    min-height: 140px;  
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+input[type=submit]{
+
+    margin: 20px auto;
+    display: block;
+
+}
+
+input[type=submit]:hover{
+
+    background: #1a1557;
+    outline: #1a1557 1px solid;
+    color: white;
+    
+
+}
+
+
+
+footer div{
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+
