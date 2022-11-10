@@ -239,23 +239,22 @@ las barras del menú*/
 /*Estilos de los descuentos de los productos*/
 
 .container-table {
-    
-    background-color: rgb(80 102 255 / 78%);
+    /* background-color: rgb(80 102 255 / 78%); */
+    background-image: url("../Imagenes/descuentos.png") ;
     padding: 25px;
-    height: 32rem;
+    height: min-content;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 50px;
+    grid-template-rows: 100px repeat(5, 40px);
+    color: #000
 }
 
 .table_title {
     grid-column-start: 1;
     grid-column-end: 3;
-
     display: flex;
     justify-content: center;
-    height: auto;
-    margin: auto;
+    min-height: 80px;
 }
 
 .tamaño {
@@ -276,9 +275,11 @@ las barras del menú*/
 .table_item{
     padding: 10px;
     font-size: 1.2em;
-
+    max-width: 300px;
 }
 
 .porcentaje_item {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
