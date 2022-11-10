@@ -313,8 +313,8 @@ $descuentos = "SELECT * FROM descuentos";
         <?php $resultado = mysqli_query($conexion, $descuentos);
 
         while($row = mysqli_fetch_assoc($resultado)) { ?>
-        <div class="table_item"> <p> <?php echo $row["producto"]; ?> </p> </div>
-        <div class="porcentaje_item"> <p> <?php echo $row["porcentaje"]; ?> % </p></div>
+        <div class="table_item"> <p> <?php echo $row["Producto"]; ?> </p> </div>
+        <div class="porcentaje_item"> <p> <?php echo $row["Porcentaje_Descuento"]; ?> % </p></div>
         <?php } ?>
     </div>
 

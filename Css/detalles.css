@@ -240,7 +240,7 @@ las barras del menú*/
 
 .container-table {
     /* background-color: rgb(80 102 255 / 78%); */
-    background-image: url("../Imagenes/descuentos.png") ;
+    background-image: url("../Imagenes/descuentos.png");
     padding: 25px;
     height: min-content;
     display: grid;
