@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politicas de la Tienda</title>
+    <link rel="stylesheet" href=".\Css\detalles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+    <header id="encabezado">
+
+        <div class="logo">
+            <div class="carrito_Item">
+                <a href="index.php">
+                    <img class="log" src=".\Imagenes\logo-Papeleria4.jpg" style="width: 100px;
+                    height: 80px;
+                    object-fit: contain;
+                    object-position: center center;" alt="logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="division">
+            <hr>
+        </div>
+
+        <div class="nave_1" id="myTopnav">
+            <a href="index.php">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="politicas.html">Políticas de la tienda</a>
+            <a href="#Tienda">Tienda</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nave_1") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nave_1"
+                }
+            }
+        </script>
+    </header>
+</body>
+</html>

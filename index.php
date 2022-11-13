@@ -25,19 +25,12 @@ $descuentos = "SELECT * FROM descuentos";
 
         <div class="logo">
             <div class="carrito_Item">
-
-            </div>
-            <div class="carrito_Item">
                 <a href="index.php">
                     <img class="log" src=".\Imagenes\logo-Papeleria4.jpg" style="width: 100px;
                     height: 80px;
                     object-fit: contain;
                     object-position: center center;" alt="logo">
                 </a>
-            </div>
-
-            <div class="carrito_Item" style="height: 60px; width: 50px;">
-                <img src=".\Imagenes\carrito-de-compras.png" width="45" height="51.83" alt="compra">
             </div>
         </div>
 
@@ -48,7 +41,7 @@ $descuentos = "SELECT * FROM descuentos";
         <div class="nave_1" id="myTopnav">
             <a href="index.php">Inicio</a>
             <a href="contacto.html">Contacto</a>
-            <a href="#Politicas">Políticas de la tienda</a>
+            <a href="politicas.html">Políticas de la tienda</a>
             <a href="#Tienda">Tienda</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
