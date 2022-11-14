@@ -7,6 +7,13 @@ body {
     background-color: #fdfcfc;
 }
 
+footer div{
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+
 /* .logo hace que la imagen del logo de la empresa y que la imagen del carrito de compras se
 posicionen de manera correcta en el centro y a la izquierda del menú */
 
@@ -47,22 +54,13 @@ hr {
     padding: 12px;
 }
 
-nav {
-    height: 10px;
-    text-align: center;
-}
-
-nav ul {
+#autoWidth {
     list-style: none;
     display: inline-block;
     padding: 18px;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
+.item {
     float: left;
     font-size: 16px;
 }
@@ -201,7 +199,7 @@ las barras del menú*/
     margin: auto;
     width: 220px;
     height: 300px;
-    overflow: hidden;
+    overflow: unset;
 }
 
 .slide-img {
@@ -282,4 +280,36 @@ las barras del menú*/
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Estilos para la página de Políticas de la Tienda*/
+
+.politica {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: medium;
+}
+
+section {
+    text-align: center;
+}
+
+.list-sencilla {
+    display: inline-block;
+    text-align: left;
+}
+
+.list-sencilla {
+    margin: 2%;
+    padding-inline: 32%;
+}
+
+.lista {
+    margin-block: 3%;
+}
+
+h3 {
+    font-size: 32px;
 }

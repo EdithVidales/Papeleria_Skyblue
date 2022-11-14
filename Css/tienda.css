@@ -1,0 +1,10 @@
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    justify-content: center;
+}
+
+.box {
+    margin: 30px;
+}

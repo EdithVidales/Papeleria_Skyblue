@@ -42,7 +42,7 @@ $descuentos = "SELECT * FROM descuentos";
             <a href="index.php">Inicio</a>
             <a href="contacto.html">Contacto</a>
             <a href="politicas.html">Políticas de la tienda</a>
-            <a href="#Tienda">Tienda</a>
+            <a href="tienda.html">Tienda</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
         <script>
@@ -75,7 +75,7 @@ $descuentos = "SELECT * FROM descuentos";
         <section class="slider">
             <div class="contenedor">
                 <ul id="autoWidth" class="cs-hidden">
-                    <li class="item-a">
+                    <li class="item a">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -97,7 +97,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-b">
+                    <li class="item b">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -117,7 +117,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-c">
+                    <li class="item c">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -137,7 +137,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-d">
+                    <li class="item d">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -157,7 +157,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-f">
+                    <li class="item f">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -191,7 +191,7 @@ $descuentos = "SELECT * FROM descuentos";
         <section class="slider">
             <div class="contenedor">
                 <ul id="autoWidth" class="cs-hidden">
-                    <li class="item-a">
+                    <li class="item a">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -211,7 +211,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-b">
+                    <li class="item b">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -231,7 +231,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-c">
+                    <li class="item c">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -251,7 +251,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-d">
+                    <li class="item d">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
@@ -271,7 +271,7 @@ $descuentos = "SELECT * FROM descuentos";
                             </div>
                         </div>
                     </li>
-                    <li class="item-f">
+                    <li class="item f">
                         <div class="box">
                             <div class="slide-img">
                                 <a href="#">
